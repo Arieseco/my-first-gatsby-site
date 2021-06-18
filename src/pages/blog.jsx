@@ -6,7 +6,7 @@ const BlogPage = ({ data}) => {
   return (
     <Layout pageTitle="My Blog Posts">
       {
-        data.allFile.nodes.map(node =>{
+        data?.allFile.nodes.map(node =>{
           return(
             <li key={node.name}>
               {node.name}
